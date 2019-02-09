@@ -1,0 +1,29 @@
+name: terminal_worm
+version: git
+summary: A remake of the classic Snake game
+description: |
+  A remake of the classic Snake game in your terminal
+grade: stable
+confinment: strict
+
+apps:
+  terminal_worm:
+    command: python3 $SNAP/bin/main.py
+     
+parts: 
+  terminal_worm:
+    source: https://github.com/kz6fittycent/Terminal_Worm
+    source-type: git
+    plugin: python
+    python-version: python3
+    
+    build-packages:
+      - python3
+      
+    stage-packages:
+      - python3
+
+  publish:
+    plugin: copy
+    files:
+      ./main.py: bin/main.py

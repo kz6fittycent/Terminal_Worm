@@ -4,7 +4,7 @@ summary: A remake of the classic Snake game
 description: |
   A remake of the classic Snake game in your terminal
 grade: stable
-confinment: strict
+confinement: strict
 
 apps:
   terminalworm:

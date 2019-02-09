@@ -1,3 +1,5 @@
+[![Snap Status](https://build.snapcraft.io/badge/kz6fittycent/Terminal_Worm.svg)](https://build.snapcraft.io/user/kz6fittycent/Terminal_Worm)
+
 Terminal_Worm
 =============
 
@@ -30,3 +32,8 @@ TODO
 - Colors
 
 - Saved games
+
+
+To Install
+-------------
+`sudo snap install terminalworm`

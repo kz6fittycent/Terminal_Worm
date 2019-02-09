@@ -1,4 +1,4 @@
-name: terminal worm
+name: terminalworm
 version: git
 summary: A remake of the classic Snake game
 description: |
@@ -7,11 +7,11 @@ grade: stable
 confinment: strict
 
 apps:
-  terminal_worm:
+  terminalworm:
     command: python3 $SNAP/bin/main.py
      
 parts: 
-  terminal_worm:
+  terminalworm:
     source: https://github.com/kz6fittycent/Terminal_Worm
     source-type: git
     plugin: python

@@ -143,4 +143,4 @@ if __name__ == '__main__':
     curses.wrapper(main)
 
     # curses.wrapper cleans up for us, so all that's left to do is:
-    print('See you soon!')
+    print('Smell ya later tater!')

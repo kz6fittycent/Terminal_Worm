@@ -1,8 +1,12 @@
 name: terminalworm
-version: git
+adopt-info: terminalworm
 summary: A remake of the classic Snake game
 description: |
   A remake of the classic Snake game in your terminal
+
+license: GPL-3.0
+
+base: core18
 grade: stable
 confinement: strict
 
@@ -17,6 +21,10 @@ parts:
     plugin: python
     python-version: python3
     
+    override-pull: |
+      snapcraftctl pull
+      snapcraftctl set-version "$(git describe --tags | sed 's/^v//' | cut -d "-" -f1)"
+    
     build-packages:
       - python3
       
@@ -26,4 +34,3 @@ parts:
   publish:
     plugin: dump
     source: .
-      #./main.py: main.py
